@@ -1,279 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Muhammad Ali Jafri</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
-  <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    
+    <!-- For better browser support -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
-    <p>Global</p>
-  </a>
-  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-</div>
-
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
-            <p>Global</p>
-          </a>
-          <button class="header--cta cta">Hire Us</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Works</span></li>
-            <li><span>About</span></li>
-            <li><span>Contact</span></li>
-            <li><span>Hire us</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>Your next<br>interactive<br>experience</h1>
-                <button class="cta">Hire Us
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="assets/img/introduction-visual.png" alt="Welcome">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>Metiew &amp; Smith</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Fantasy interactive</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Paul &amp; shark</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Selected work</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-victory.jpg" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Victory</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
-                      </div>
-                      <p class="slider--item-title">Metiew &amp; Smith</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Alex Nowak</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2>We<br>believe in<br>passionate<br>people</h2>
-                <a href="#0">Career
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                    </svg>
-                  </span>
-                </a>
-                <img src="assets/img/about-visual.png" alt="About Us">
-              </div>
-              <div class="about--options">
-                <a href="#0">
-                  <h3>Winners</h3>
-                </a>
-                <a href="#0">
-                  <h3>Philosophy</h3>
-                </a>
-                <a href="#0">
-                  <h3>History</h3>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="contact">
-              <div class="contact--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <p>Pawia 5, 31-154 Kraków, Poland</p>
-                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
-                    <a href="tel:+148126287560">+48 12 628 75 60</a>
-                  </div>
-                  <ul class="modal--options">
-                    <li><a href="#0">Bēhance</a></li>
-                    <li><a href="#0">dribbble</a></li>
-                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>You want us to do</h2>
-              <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
-                <div class="work-request--options">
-                  <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
-                    <label for="opt-1">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      App Design
-                    </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
-                    <label for="opt-2">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Graphic Design
-                    </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
-                    <label for="opt-3">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Motion Design
-                    </label>
-                  </span>
-                  <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="ux design">
-                    <label for="opt-4">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      UX Design
-                    </label>
-                    <input id="opt-5" type="checkbox" value="webdesign">
-                    <label for="opt-5">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Webdesign
-                    </label>
-                    <input id="opt-6" type="checkbox" value="marketing">
-                    <label for="opt-6">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Marketing
-                    </label>
-                  </span>
-                </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <input type="submit" value="Send Request">
-              </form>
-            </div>
-          </li>
-        </ul>
-      </div>
+    <div class="crt-effect"></div>
+    <div class="retro-background">
+        <div class="neon-grid"></div>
+        <div class="neon-glow"></div>
+        <div class="scanlines"></div>
+        <div class="terminal-border"></div>
+        <div id="floating-symbols"></div>
+        <div id="spaceship">△</div>
     </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Works</li>
-    <li>About</li>
-    <li>Contact</li>
-    <li>Hire us</li>
-  </ul>
+
+    <!-- Add this in your HTML -->
+<audio id="bgMusic" loop>
+    <source src="assets/bgmusic.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-control">
+    <button id="muteBtn" class="retro-btn">
+        <i class="fas fa-volume-up"></i>
+    </button>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
+    <!-- ==================== -->
+<!--      HEADER          -->
+<!-- ==================== -->
+<header class="retro-header">
+    <nav>
+        <ul class="nav-list">
+            <li data-color="#ff3366"><a href="#about">About</a></li>
+            <li data-color="#33ccff"><a href="#portfolio">Portfolio</a></li>
+            <li data-color="#ffcc00"><a href="#skills">Skills</a></li>
+            <li data-color="#9933ff"><a href="#platforms">Platforms</a></li>
+            <li data-color="#00ff00"><a href="#hire-me">Hire Me</a></li>
+        </ul>
+    </nav>
+</header>
+    
+    <main class="content">
+        <!-- ==================== -->
+<!--      HERO SECTION    -->
+<!-- ==================== -->
+<section class="hero">
+    <div class="hero-content">
+        <!-- Text Content -->
+        <div class="hero-text">
+            <h1 class="retro-title typing-animation">Muhammad Ali</h1>
+            <h2 class="retro-subtitle">
+                <span class="typewriter" data-text="Unity Game Developer"></span>
+                <span class="cursor">|</span>
+            </h2>
+        </div>
+        
+        <!-- Image Container -->
+        <div class="hero-image">
+            <img src="assets/herosectionimage.png" alt="Muhammad Ali" class="floating-image">
+        </div>
+    </div>
+</section>
+
+<!-- ==================== -->
+<!--      ABOUT SECTION   -->
+<!-- ==================== -->
+<section class="about-section" id="about">
+    <div class="retro-border">
+        <h2 class="section-title neon-text">About Me</h2>
+        <div class="summary-container">
+            <div class="summary-text">
+                <span class="typewriter-text"></span>
+                <span class="type-cursor">|</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================== -->
+<!--    PORTFOLIO SECTION -->
+<!-- ==================== -->
+<!-- HTML -->
+<section class="portfolio-section" id="portfolio">
+    <h2 class="section-title neon-text">Portfolio</h2> 
+    <div class="portfolio-grid" id="portfolioGrid">
+    <div class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-details">
+                    <h3 class="modal-title"></h3>
+                    <div class="detail-content"></div>
+                </div>
+                <div class="modal-media">
+                    <video class="project-video" controls>
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ==================== -->
+<!--      SKILLS SECTION -->
+<!-- ==================== -->
+<section class="skills-section" id="skills">
+    <h2 class="section-title neon-text">Technical Arsenal</h2>
+    
+    <div class="skills-grid">
+        <!-- Game Engines & Languages -->
+        <div class="skill-category">
+            <h3 class="category-title">🕹️ Game Engines & Languages</h3>
+            <div class="skills-list">
+                <div class="skill-item" data-level="5" data-proficiency="Expert">
+                    <span class="skill-name">Unity</span>
+                    <div class="proficiency-dots">●●●●●</div>
+                </div>
+                <div class="skill-item" data-level="5" data-proficiency="Expert">
+                    <span class="skill-name">C#</span>
+                    <div class="proficiency-dots">●●●●●</div>
+                </div>
+                <div class="skill-item" data-level="2" data-proficiency="Fundamentals">
+                    <span class="skill-name">Shader Graph basics</span>
+                    <div class="proficiency-dots">●●○○○</div>
+                </div>
+                <div class="skill-item" data-level="2" data-proficiency="Fundamentals">
+                    <span class="skill-name">Unreal Engine</span>
+                    <div class="proficiency-dots">●●●●●</div>
+                </div>
+                <!-- Add other skills following same structure -->
+            </div>
+        </div>
+
+        <!-- Optimization & Performance -->
+        <div class="skill-category">
+            <h3 class="category-title">🚀 Optimization & Performance</h3>
+            <div class="skills-list">
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Object Pooling</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Occlusion Culling</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Level of Detail</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Memory Management</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Size Optimization</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <!-- Add other skills -->
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="category-title">Networking & Multiplayer</h3>
+            <div class="skills-list">
+                <div class="skill-item" data-level="3" data-proficiency="Intermediate">
+                    <span class="skill-name">Photon PUN</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">RESTful API integration</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <!-- Add other skills -->
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="category-title">Tools & SDKs</h3>
+            <div class="skills-list">
+                <div class="skill-item" data-level="5" data-proficiency="Expert">
+                    <span class="skill-name" data-tooltip="Firebase (Analytics, Remote Config)">
+                        Firebase (Analytics, Remote Config)
+                    </span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">PlayFab</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="5" data-proficiency="Expert">
+                    <span class="skill-name">Monetization(Admob, Apploving, Unity, etc)</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Git</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="3" data-proficiency="Intermediate">
+                    <span class="skill-name">Jira</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <!-- Add other skills -->
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="category-title">Design & Art</h3>
+            <div class="skills-list">
+                <div class="skill-item" data-level="5" data-proficiency="Expert">
+                    <span class="skill-name">Level Design</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="5" data-proficiency="Expert">
+                    <span class="skill-name">UI/UX Implementation</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Visual Effects</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Animator Controllers</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="3" data-proficiency="Intermediate">
+                    <span class="skill-name">Lightning</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <!-- Add other skills -->
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="category-title">Soft Skills</h3>
+            <div class="skills-list">
+                <div class="skill-item" data-level="5" data-proficiency="Expert">
+                    <span class="skill-name">Problem‑solving</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="5" data-proficiency="Expert">
+                    <span class="skill-name">Cross‑functional Collaboration</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Mentoring</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Clear Communication</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <div class="skill-item" data-level="4" data-proficiency="Advanced">
+                    <span class="skill-name">Product Management</span>
+                    <div class="proficiency-dots">●●●●○</div>
+                </div>
+                <!-- Add other skills -->
+            </div>
+        </div>
+
+        
+
+        <!-- Add other categories similarly -->
+    </div>
+</section>
+
+    <!-- ==================== -->
+<!--   PLATFORMS SECTION -->
+<!-- ==================== -->
+<section class="platforms-section" id="platforms">
+    <h2 class="section-title neon-text">Platform Experience</h2>
+    
+    <div class="platforms-grid">
+        <!-- Current Platforms -->
+        <div class="platform-card android" data-tooltip="Android">
+            <i class="fab fa-android"></i>
+            <div class="platform-glow"></div>
+        </div>
+
+        <div class="platform-card ios" data-tooltip="iOS">
+            <i class="fab fa-apple"></i>
+            <div class="platform-glow"></div>
+        </div>
+
+        <div class="platform-card pc" data-tooltip="Windows PC">
+            <i class="fab fa-windows"></i>
+            <div class="platform-glow"></div>
+        </div>
+
+        <div class="platform-card html5" data-tooltip="Web/HTML5">
+            <i class="fab fa-html5"></i>
+            <div class="platform-glow"></div>
+        </div>
+
+        <!-- Future Platform -->
+        <div class="platform-card console pulse" data-tooltip="Console">
+            <i class="fas fa-gamepad"></i>
+            <div class="platform-glow"></div>
+            <div class="coming-soon">Want to Work On</div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== -->
+<!--      HIRE ME SECTION -->
+<!-- ==================== -->
+<section class="hireme-section" id="hire-me">
+    <div class="cyber-container">
+        <!-- Left Side - Contact Info -->
+        <div class="contact-panel">
+            <div class="contact-header">
+                <h3 class="neon-underline">Let's Build Something Extraordinary</h3>
+            </div>
+            
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <div class="detail-item">
+                    <i class="fas fa-user-astronaut"></i>
+                    <span class="cyan-text">Muhammad Ali</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-rocket"></i>
+                    <a href="mailto:smajsali5@gmail.com" class="cyan-text">smajsali5@gmail.com</a>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-satellite"></i>
+                    <a href="tel:+923160455514" class="cyan-text">+92 316 0455514</a>
+                </div>
+            </div>
+
+            <!-- Professional Links -->
+            <div class="pro-links">
+                <a href="https://github.com/muhammadali514" class="pro-link gh" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    <span class="cyan-text">GitHub Portfolio</span>
+                </a>
+                <a href="https://www.behance.net/muhammadalijafri" class="pro-link be" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-behance"></i>
+                    <span class="cyan-text">Design Works</span>
+                </a>
+                <a href="https://www.linkedin.com/in/muhammad-ali-839221136/" class="pro-link in" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="cyan-text">Professional Profile</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Side - Resume Button -->
+        <div class="resume-orb-container">
+            <button class="resume-orb glitch" data-text="DOWNLOAD_RESUME">
+                <div class="orb-glow"></div>
+                <span class="orb-text">RESUME</span>
+                <div class="particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+            </button>
+        </div>
+
+        <!-- Social Links Bottom -->
+        <div class="social-matrix">
+            <div class="social-grid">
+                <!-- <a href="#" class="social-cell fb"><i class="fab fa-facebook"></i></a> -->
+                <a href="#" class="social-cell yt"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-cell ig"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-cell tt"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-cell tw"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-cell dc"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this to your Hire Me section -->
+</section>
+
+
+<!-- ==================== -->
+<!--      RESUME MODEL -->
+<!-- ==================== -->
+<div class="resume-modal">
+    <div class="modal-backdrop"></div>
+    <div class="retro-resume">
+        <span class="close-modal">&times;</span>
+        
+        <!-- CRT Effect -->
+        <div class="crt-overlay">
+            <div class="scanline"></div>
+            <div class="glitch"></div>
+        </div>
+
+        <!-- Resume Content -->
+        <div class="resume-content">
+            <header class="resume-header">
+                <img src="assets/profile.jpg" class="profile-img" alt="Muhammad Ali">
+                <div class="header-info">
+                    <h1 class="glitch-text">MUHAMMAD ALI</h1>
+                    <h2 class="neon-title">UNITY GAME DEVELOPER</h2>
+                    <div class="contact-info">
+                        <p>📧 smajsali5@gmail.com</p>
+                        <p>📱 +92 316 0455514</p>
+                        <!-- <div class="links">
+                            <a href="#" class="pixel-link">GitHub</a>
+                            <a href="#" class="pixel-link">Portfolio</a>
+                            <a href="#" class="pixel-link">LinkedIn</a>
+                        </div> -->
+                    </div>
+                </div>
+            </header>
+
+            <div class="resume-body">
+                <!-- Summary -->
+                <div class="resume-section">
+                    <h3 class="section-title">> SUMMARY</h3>
+                    <p class="terminal-text">
+                        Unity Game Developer with over 6 years of professional experience designing, developing, 
+                        and deploying 2D and 3D games for mobile and PC platforms. Proven ability to lead full 
+                        project lifecycles from concept to launch, delivering 10+ titles with over 200K combined 
+                        downloads. Expertise in C#, object-oriented architecture, performance optimization 
+                        (reducing load times by 40%, boosting FPS by 30%), and cross-platform build management. 
+                        Skilled in UI/UX design, VFX integration, and multiplayer systems using Photon PUN. 
+                        Strong communicator adept at Agile methodologies, code reviews, and remote collaboration.
+                    </p>
+                </div>
+
+                <!-- Experience -->
+                <div class="resume-section">
+                    <h3 class="section-title">> EXPERIENCE</h3>
+                    
+                    <div class="experience-item">
+                        <div class="company-header">
+                            <span class="company-name">Indie Game Developer & Freelancer</span>
+                            <span class="experience-date">Jan 2024 – Present</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>■ Engineered 5 client-based projects including match-three, platformer, and survival genres</li>
+                            <li>■ Implemented object pooling, occlusion culling, and LOD systems (↑ FPS 45 → 60+)</li>
+                            <li>■ Integrated SDKs (Firebase, PlayFab, Photon PUN) reducing integration time by 25%</li>
+                            <li>■ Designed 20+ levels improving player retention by 15%</li>
+                            <li>■ Utilized Git/Jira workflows maintaining &lt;5% defect rate</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="company-header">
+                            <span class="company-name">Unity Developer, Grape Games</span>
+                            <span class="experience-date">Jun 2022 – Dec 2023</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>■ Led development of 3 titles grossing $75K+ in 6 months</li>
+                            <li>■ Architected Play-to-Earn mechanics expanding to 10K DAU</li>
+                            <li>■ Optimized asset pipeline (↓ APK size 30%, ↓ memory 25%)</li>
+                            <li>■ Mentored 4 junior developers through code reviews</li>
+                            <li>■ Integrated 150+ VFX assets without FPS drop</li>
+                        </ul>
+                    </div>
+
+                    <!-- Add other experience items following same pattern -->
+                </div>
+
+                <!-- Education -->
+                <div class="resume-section">
+                    <h3 class="section-title">> EDUCATION</h3>
+                    <div class="education-item">
+                        <p class="terminal-text">
+                            <span class="cyan-text">Bachelor of Computer Science</span><br>
+                            National University of Modern Languages<br>
+                            2015 – 2019
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="resume-section">
+                    <h3 class="section-title">> SKILLS</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <span class="skill-title">Game Engines & Languages:</span>
+                            <span class="skill-items">Unity (6+ yrs), C#, Shader Graph, Unreal Engine</span>
+                        </div>
+                        <div class="skill-category">
+                            <span class="skill-title">Optimization & Performance:</span>
+                            <span class="skill-items">Object Pooling, Occlusion Culling, LOD</span>
+                        </div>
+                        <!-- Add other skill categories -->
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="resume-section">
+                    <h3 class="section-title">> LANGUAGES</h3>
+                    <p class="terminal-text">
+                        English ■■■■■<br>
+                        Urdu ■■■■■
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
+
+<!-- <script>
+    // Enhanced Modal Handling
+    document.querySelector('.resume-orb').addEventListener('click', () => {
+        const modal = document.querySelector('.resume-modal');
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    });
+    
+    document.querySelector('.close-modal').addEventListener('click', closeModal);
+    
+    document.querySelector('.modal-backdrop').addEventListener('click', closeModal);
+    
+    function closeModal() {
+        document.querySelector('.resume-modal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+</script> -->

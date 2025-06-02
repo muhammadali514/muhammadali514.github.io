@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+            font-family: 'Press Start 2P', cursive;
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Pixel Grid Background */
+        .pixel-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            z-index: 1;
+        }
+
+        /* Animated Elements */
+        .floating-platform {
+            position: absolute;
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAhFJREFUeNqkU81qE0EU/mZ2dhOTtEnbtE1/QFFUEPRBBF/AF/AFfAofwBfwAXwDX0AQfAIfQEErVKSClTZNW7P5IY1JNtnf2Z3xO7ubdFOlhYEDs7N3z3e+c+6ZUVJK3GZUjCzL4Ps+oiiC4ziwbRue56HZbKJWq8E0TSwWC2RZBiEEFEVRB1VV1Wq1SqUSdF1XQNM0hGGIOI7hui5msxmCIECapiuA4jNBEATI83wF4HkO0zTR6XSUer/fV6Ber6t5CVAqlWDbNizLUgBxHCsAKhMEg0wmg8FggPF4jH6/j8lkogCKxSJyuRx0XVcMqEwQnudhOp0qgEajgW63i16vp0Cj0UC5XFYA+XxeqYdhqBhwT4rFYsE9UQwI0G63VZm4J9wTAlDdMAxlQAzIgHtCgDAMFQMC8J4YcE8IQHX6gAD0AQHoAwLQBwSgDwhAHxCAPiAAfUAA+oAA9AEB6AMC0AcEoA8IQB8QgD4gAH1AAPqAAPQBAegDAtAHBKAPCEAfEIA+IAB9QAD6gAD0AQHoAwLQBwSgDwhAHxCAPiAAfUAA+oAA9AEB6AMC0AcEoA8IQB8QgD4gAH1AAPqAAPQBAegDAtAHBKAPCEAfEIA+IAB9QAD6gAD0AQHoAwLQBwSgDwhAHxCAPiAAfUAA+oAA9AEB6AMC0AcEoA8IQB8QgD4gAH1AAPqAAPQBAegDAtAHBKAPCEAfEIA+IAB9AEB6AMC0AcEoA8IQB8QgD4gAH1AAPqAAPQBAegDAtAHBKAPCEAfEIA+IAB9AEB6AMC0AcEoA8IQB8QgD4gAH1AAPqAAPQBAegDAtAHBKAPCEAfEIA+IAB9AEB6AMC0AcEoA8IQB8QgD4gAH1AAPqAAPQBAegDAtAHBKAPCEAfEIA+IAB9QAD6gAD0AQHoAwLQBwSgDwhAHxCAPiAAfUAA+oAA9AEB6AMC0AcEoA8IQB8QgD4gAH1AAPqAAPQBAegDAtAHBKAPCEAfEIA+IAB9QAD6gAD0AQHoAwLQBwSgDwhAHxCAPiAAfUAA+oAA9AEB6AMC0AcEoA8IQB8QgD4gAH1AAPqAAPQBAegDAtAHBKAPCEAfEIA+IAB9QAD6gAD0AQHoAwLQBwSgDwhAHxCAPiAAfUAA+oAA9AEB6AMC0AcEoA8IQB8QgD4gwD8FGACu07A4CmVuZHN0cmVhbQplbmRvYmoKMSAwIG9iago8PCAvVHlwZSAvUGFnZSAvUGFyZW50IDMgMCBSIC9SZXNvdXJjZXMgMiAwIFIgL0NvbnRlbnRzIDQgMCBSID4+CmVuZG9iago0IDAgb2JqCjw8IC9MZW5ndGggMTEyID4+CnN0cmVhbQp4nCvkMlAAwaJULl1DAyBISuQyMORyKOUyNtAz0jMx0jM3MjAyNTAw1DMyMDAyNzUyNTcyMjdRKEpNzEkB8gwUijLzShQyMxW4DIGUroGRuaGeIZCZyAUEAM0YDkMKZW5kc3RyZWFtCmVuZG9iagozIDAgb2JqCjw8IC9UeXBlIC9QYWdlcyAvS2lkcyBbMSAwIFIgXSAvQ291bnQgMSA+PgplbmRvYmoKMiAwIG9iago8PCAvUHJvY1NldCBbL1BERiAvVGV4dCBdIC9Gb250IDw8IC9GMSEwIDUgMCBSID4+ID4+CmVuZG9iago1IDAgb2JqCjw8IC9UeXBlIC9Gb250IC9TdWJ0eXBlIC9UeXBlMSAvQmFzZUZvbnQgL0hlbHZldGljYSA+PgplbmRvYmoKNiAwIG9iago8PCAvQXV0aG9yIChNYXJjZWxvIFNlcnJhKS9DcmVhdG9yIChBcHBsZSBQYWdlcykvQ3JlYXRpb25EYXRlIChEOjIwMjQwNTA2MTUwNjQ4KzAyJzAwJykvTW9kRGF0ZSAoRDoyMDI0MDUwNjE1MDY0OCswMicwMCcpIC9Qcm9kdWNlciAoQXBwbGUgUGFnZXMpID4+CmVuZG9iagp4cmVmCjAgNwowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMDkgMDAwMDAgbiAKMDAwMDAwMDA3NSAwMDAwMCBuIAowMDAwMDAwMTM5IDAwMDAwIG4gCjAwMDAwMDAyMjggMDAwMDAgbiAKMDAwMDAwMDMxNyAwMDAwMCBuIAowMDAwMDAwNDI0IDAwMDAwIG4gCnRyYWlsZXIKPDwgL1NpemUgNyAvUm9vdCAzIDAgUiAvSW5mbyA2IDAgUiA+PgpzdGFydHhyZWYKNDk0CiUlRU9GCg==') repeat;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .pixel-cloud {
+            position: absolute;
+            background: #ffffff;
+            animation: drift 20s linear infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes drift {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(100vw); }
+        }
+
+        .retro-text {
+            position: relative;
+            z-index: 3;
+            color: #fff;
+            text-shadow: 2px 2px #ff00ff;
+            padding: 2rem;
+        }
+
+        /* Content Container */
+        .content {
+            position: relative;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+            color: #fff;
+            padding: 2rem;
+        }
+
+        /* Retro CRT Effect */
+        .crt::after {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(18, 16, 16, 0.1);
+            opacity: 0.3;
+            z-index: 2;
+            pointer-events: none;
+            animation: flicker 0.15s infinite;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.4; }
+            100% { opacity: 0.3; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="crt">
+    <div class="pixel-grid"></div>
+    
+    <!-- Animated Background Elements -->
+    <div class="floating-platform" style="top: 20%; left: 10%; width: 150px; height: 30px;"></div>
+    <div class="floating-platform" style="top: 50%; right: 15%; width: 100px; height: 20px;"></div>
+    <div class="pixel-cloud" style="top: 15%; width: 80px; height: 40px;"></div>
+    <div class="pixel-cloud" style="top: 70%; width: 120px; height: 50px; animation-delay: -10s;"></div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h1 class="retro-text">MY PORTFOLIO</h1>
+        <!-- Add your content here -->
+    </div>
+
+    <script>
+        // Create random floating elements
+        function createFloatingElements() {
+            const container = document.body;
+            const colors = ['#ff3366', '#33ccff', '#ffcc00', '#9933ff'];
+            
+            for(let i = 0; i < 15; i++) {
+                const element = document.createElement('div');
+                element.className = 'floating-element';
+                element.style.cssText = `
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    background: ${colors[Math.floor(Math.random() * colors.length)]};
+                    animation: float ${2 + Math.random() * 3}s ease-in-out infinite;
+                    left: ${Math.random() * 100}%;
+                    top: ${Math.random() * 100}%;
+                `;
+                container.appendChild(element);
+            }
+        }
+
+        // Add mouse interaction
+        document.addEventListener('mousemove', (e) => {
+            const ship = document.getElementById('spaceship');
+            if(ship) {
+                ship.style.left = `${e.clientX}px`;
+                ship.style.top = `${e.clientY}px`;
+            }
+        });
+
+        // Initialize
+        window.addEventListener('load', () => {
+            createFloatingElements();
+            
+            // Add spaceship
+            const ship = document.createElement('div');
+            ship.id = 'spaceship';
+            ship.style.cssText = `
+                position: fixed;
+                width: 32px;
+                height: 32px;
+                background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="%2333ccff" d="M16 2 L2 18 L12 22 L8 30 L16 26 L24 30 L20 22 L30 18 Z"/></svg>');
+                pointer-events: none;
+                transition: all 0.1s;
+                z-index: 3;
+            `;
+            document.body.appendChild(ship);
+        });
+    </script>
+</body>
+</html>
